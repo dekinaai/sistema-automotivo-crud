@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Gestão - Estoque de Veículos</title></head>
+<body>
+<h1>Estoque de Veículos - Demo</h1>
+<div id="list"></div>
+<script>
+async function load(){
+  const res = await fetch('/api/vehicles');
+  const data = await res.json();
+  const container = document.getElementById('list');
+  container.innerHTML = '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+}
+load();
+</script>
+<p>Observação: este frontend simples assume que backend está servido pelo mesmo host (localhost:8080).</p>
+</body>
+</html>

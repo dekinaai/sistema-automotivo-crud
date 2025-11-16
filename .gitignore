@@ -1,0 +1,49 @@
+# -----------------------------
+# Build / Compilação Java
+# -----------------------------
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# -----------------------------
+# Logs
+# -----------------------------
+*.log
+logs/
+*.tmp
+
+# -----------------------------
+# IDEs e editores
+# -----------------------------
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# NetBeans
+nbproject/private/
+build/
+
+# VSCode
+.vscode/
+
+# -----------------------------
+# Sistema Operacional
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# Outros
+# -----------------------------
+/bin/
+/tmp/
+ignr.md
